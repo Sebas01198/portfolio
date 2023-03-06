@@ -1,0 +1,55 @@
+.hero{
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    
+    &__container{
+        text-align: center;
+        color: #fff;
+        position: absolute;
+        padding: 25px;
+    }
+    &__hello{
+        font-size: 25px;
+    }
+    &__name{
+        margin: 10px 0;
+        font-size: 40px;
+    }
+    &__profesion{
+        font-size: 25px;
+    }
+    &__button{
+        margin-top: 50px;
+        background-color: transparent;
+        border: 3px solid white;
+        padding: 15px 30px;
+        color: white;
+        font-size: 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        &:hover{
+            border: 3px solid #0e5d91;
+        }
+    }
+    &__button a{
+        color: white;
+        
+    }
+}
+
+.hero::before{
+    position: absolute;
+    content: '';
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color: #000000, $alpha: .6);
+}

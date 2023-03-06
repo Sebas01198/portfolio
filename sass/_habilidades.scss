@@ -1,0 +1,22 @@
+.habilidades{
+    padding: 20px;
+    
+
+    &__frontend{
+        padding: 80px 0px;
+        margin-top: 50px;
+        box-shadow: 0px 1px 23px rgb(0 0 0 / 30%);
+        background-color: rgb(240, 240, 240);
+        border-radius: 10px;
+
+    }
+
+    &__backend{
+        padding: 80px 0px;
+        margin-top: 50px;
+        box-shadow: 0px 1px 23px rgb(0 0 0 / 30%);
+        background-color: rgb(240, 240, 240);
+        border-radius: 10px;
+
+    }
+}

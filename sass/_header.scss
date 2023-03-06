@@ -1,0 +1,23 @@
+.header{
+    position: fixed;
+    color: white;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    &__container{
+
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        align-items: center;
+    }
+    &__logo{
+        font-size: 20px;
+    }
+
+    &__btn-menu{
+        font-size: 25px;
+        cursor: pointer;
+    }
+}

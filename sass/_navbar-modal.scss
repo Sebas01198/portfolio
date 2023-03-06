@@ -1,0 +1,20 @@
+.navbar-modal{
+    border: 1px solid red;
+    position: absolute;
+    top: 72px;
+    right: 0;
+    left: 0;
+    height: 300px;
+    display: none; //cuando se presione es display flex
+    justify-content: center;
+    align-items: center;
+
+    &__items{
+        height: 200px;
+        border: 1px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+}
