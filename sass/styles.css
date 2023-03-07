@@ -25,22 +25,35 @@
 }
 
 .navbar-modal {
-  border: 1px solid red;
   position: absolute;
+  color: #000;
+  background-color: white;
   top: 72px;
   right: 0;
   left: 0;
-  height: 300px;
-  display: none;
+  height: 250px;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .navbar-modal__items {
-  height: 200px;
-  border: 1px solid blue;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+.navbar-modal__item {
+  color: #0078ff;
+}
+.navbar-modal__link {
+  color: #0078ff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.toggle {
+  display: none;
+  background-color: transparent;
 }
 
 .hero {
@@ -118,7 +131,7 @@
   height: 150px;
   margin: auto;
   border-radius: 50%;
-  border: 4px solid #0e5d91;
+  border: 4px solid #0078ff;
   margin-bottom: 50px;
 }
 .about__date {
@@ -136,7 +149,7 @@
 .about__redes a {
   font-size: 20px;
   margin: 20px;
-  border: 3px solid #0e5d91;
+  border: 3px solid #0078ff;
   border-radius: 50%;
   padding: 5px 8px;
   color: black;
@@ -184,7 +197,7 @@
   cursor: pointer;
   background-color: white;
   border-radius: 50%;
-  color: #0e5d91;
+  color: #0078ff;
 }
 .habilidades-navbar__title {
   margin-top: 80px;
@@ -274,5 +287,5 @@ h2 {
 }
 
 .icon-title {
-  color: #0e5d91;
+  color: #0078ff;
 }/*# sourceMappingURL=styles.css.map */

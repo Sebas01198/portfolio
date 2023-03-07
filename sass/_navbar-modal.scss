@@ -1,20 +1,36 @@
+@use 'variables' as v;
+
 .navbar-modal{
-    border: 1px solid red;
     position: absolute;
+    color: #000;
+    background-color: white;
     top: 72px;
     right: 0;
     left: 0;
-    height: 300px;
-    display: none; //cuando se presione es display flex
+    height: 250px;
+    display: flex; //cuando se presione es display flex
     justify-content: center;
     align-items: center;
 
     &__items{
-        height: 200px;
-        border: 1px solid blue;
+        height: 150px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         
     }
+    &__item{
+        color: v.$blue;
+    }
+    &__link{
+        color: v.$blue;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+}
+
+.toggle{
+    display: none;
+    background-color: transparent;
 }

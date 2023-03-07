@@ -5,6 +5,7 @@
 @use 'about';
 @use 'habilidades';
 @use 'frontend-navbar';
+@use 'variables';
 
 *{
     padding: 0;
@@ -37,5 +38,5 @@ h2{
     margin: 0 auto;
 }
 .icon-title{
-    color: #0e5d91;
+    color: #0078ff;
 }

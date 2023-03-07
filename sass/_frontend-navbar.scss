@@ -1,3 +1,5 @@
+@use 'variables' as v;
+
 .habilidades-navbar{
     display: none;
     position: absolute;
@@ -22,7 +24,7 @@
         cursor: pointer;
         background-color: white;
         border-radius: 50%;
-        color: #0e5d91;
+        color: v.$blue;
     }
 
     &__title{
