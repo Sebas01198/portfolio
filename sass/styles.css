@@ -151,6 +151,7 @@
   box-shadow: 0px 1px 23px rgba(0, 0, 0, 0.3);
   background-color: rgb(240, 240, 240);
   border-radius: 10px;
+  cursor: pointer;
 }
 .habilidades__backend {
   padding: 80px 0px;
@@ -163,13 +164,77 @@
 .habilidades-navbar {
   display: none;
   position: absolute;
-  background-color: red;
-  top: 10px;
-  right: 10px;
+  background-color: #f5f5f5;
+  top: 0;
+  right: 0;
   bottom: 0;
-  left: 10px;
+  height: 100%;
+  left: 0;
   z-index: 1;
+  padding: 25px;
   overflow-y: scroll;
+  transition: all 0.5;
+}
+.habilidades-navbar__btnClose {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  color: #0e5d91;
+}
+.habilidades-navbar__title {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 40px;
+}
+.habilidades-navbar__name {
+  font-weight: 700;
+}
+.habilidades-navbar__skills {
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.habilidades-navbar__skill {
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.26);
+}
+.habilidades-navbar__skill i {
+  font-size: 120px;
+  padding: 30px;
+}
+
+.html {
+  color: #E56027;
+}
+
+.css {
+  color: #008ED1;
+}
+
+.sass {
+  color: #C36291;
+}
+
+.bootstrap {
+  color: #8011F1;
+}
+
+.js {
+  color: #EAD41C;
+}
+
+.react {
+  color: #00CDF2;
+}
+
+.angular {
+  color: #D2002E;
 }
 
 * {
@@ -182,6 +247,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   background-color: #f5f5f5;
+  position: relative;
 }
 
 ul {
