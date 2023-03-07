@@ -15,7 +15,16 @@ btnMenu.addEventListener('click', ()=>{
     logotipo.style.color = '#0078ff';
     btnMenu.style.color = '#000';
     
-})
+    if(navbarModal.classList.contains('toggle')){
+        header.style.background = 'transparent';
+        logotipo.style.color = '#fff';
+        btnMenu.style.color = '#fff';
+    }
+});
+
+
+
+
 
 
 
