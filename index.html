@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/b1771a1380.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header ">
         <div class="header__container container">
             <h3 class="header__logo">Sebastian Sarmiento</h3>
             <!-- navbar -->
@@ -20,12 +20,12 @@
                 <ul class="navbar__items">
                     <li class="navbar__item">
                         <i class="fa-solid fa-house"></i>
-                        <a class="navbar__link" href="#">Inicio</a>
+                        <a class="navbar__link" href="#hero">Inicio</a>
                     </li>
 
                     <li class="navbar__item">
                         <i class="fa-solid fa-house"></i>
-                        <a class="navbar__link" href="#">Sobre mi</a>
+                        <a class="navbar__link" href="#about">Sobre mi</a>
                     </li>
                     <li class="navbar__item">
                         <i class="fa-solid fa-house"></i>
@@ -41,6 +41,7 @@
 
             <!-- navbar-modal -->
             <nav class="navbar-modal toggle">
+                <i class="fa-solid fa-xmark navbar-modal__btnClose "></i>
                 <ul class="navbar-modal__items">
                     <li class="navbar-modal__item">
                         <i class="fa-solid fa-house"></i>
@@ -100,14 +101,18 @@
                     </div>
                     <div class="habilidades">
                         <h3 class="habilidades__title">Mis habilidades</h3>
-                        <div class="habilidades__frontend">
-                            <h3>Frontend</h3>
-                           
-                        </div>
+                        <div class="habilidades__display">
+                            <div class="habilidades__frontend">
+                                <i class="fa-solid fa-file-code habilidades__icon"></i>
+                                <h3>Frontend</h3>
+                            </div>
 
-                        <div class="habilidades__backend">
-                            <h3>Backend</h3>
+                            <div class="habilidades__backend">
+                                <i class="fa-solid fa-database habilidades__icon"></i>
+                                <h3>Backend</h3>
+                            </div>
                         </div>
+                            
                     </div>
 
                 </div>
@@ -117,41 +122,41 @@
     </main>
 
      <!-- navbar de habilidades frontend -->
-     <div class="habilidades-navbar">
-        <i class="fa-solid fa-xmark habilidades-navbar__btnClose "></i>
-        <h2 class="habilidades-navbar__title">Tecnologias para el desarrollo a la medida</h2>
-        <div class="habilidades-navbar__skills">
-            <div class="habilidades-navbar__skill">
+     <div class="habilidades-modal">
+        <i class="fa-solid fa-xmark habilidades-modal__btnClose-front "></i>
+        <h2 class="habilidades-modal__title">Tecnologias para el desarrollo a la medida</h2>
+        <div class="habilidades-modal__skills">
+            <div class="habilidades-modal__skill">
                 <i class="fa-brands fa-html5 html"></i>
-                <p class="habilidades-navbar__name">HTML5</p>
+                <p class="habilidades-modal__name">HTML5</p>
             </div>
-            <div class="habilidades-navbar__skill">
+            <div class="habilidades-modal__skill">
                 <i class="fa-brands fa-css3-alt css"></i>
-                <p class="habilidades-navbar__name">CSS3</p>
+                <p class="habilidades-modal__name">CSS3</p>
             </div>
 
-            <div class="habilidades-navbar__skill">
+            <div class="habilidades-modal__skill">
                 <i class="fa-brands fa-sass sass"></i>
-                <p class="habilidades-navbar__name">SASS</p>
+                <p class="habilidades-modal__name">SASS</p>
             </div>
-            <div class="habilidades-navbar__skill">
+            <div class="habilidades-modal__skill">
                 <i class="fa-brands fa-bootstrap bootstrap"></i>
-                <p class="habilidades-navbar__name">BOOTSTRAP</p>
+                <p class="habilidades-modal__name">BOOTSTRAP</p>
             </div>
 
-             <div class="habilidades-navbar__skill">
+             <div class="habilidades-modal__skill">
                 <i class="fa-brands fa-js js"></i>
-                <p class="habilidades-navbar__name">JAVASCRIPT</p>
+                <p class="habilidades-modal__name">JAVASCRIPT</p>
             </div>
 
-            <div class="habilidades-navbar__skill">
+            <div class="habilidades-modal__skill">
                 <i class="fa-brands fa-react react"></i>
-                <p class="habilidades-navbar__name">REACT</p>
+                <p class="habilidades-modal__name">REACT</p>
             </div>
 
-            <div class="habilidades-navbar__skill">
+            <div class="habilidades-modal__skill">
                 <i class="fa-brands fa-angular angular"></i>
-                <p class="habilidades-navbar__name">ANGULAR</p>
+                <p class="habilidades-modal__name">ANGULAR</p>
             </div>
 
 

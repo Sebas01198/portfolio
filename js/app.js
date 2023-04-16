@@ -1,37 +1,57 @@
 const btnMenu = document.querySelector('.header__btn-menu');
 const navbarModal = document.querySelector('.navbar-modal');
-const logotipo = document.querySelector('.header__logo')
+const navegacion = document.querySelector('.navbar');
 const header = document.querySelector('.header')
-const habilidadesNavbar = document.querySelector('.habilidades-navbar');
+const habilidadesModal = document.querySelector('.habilidades-modal');
 const habilidadesFrontendCard = document.querySelector('.habilidades__frontend');
-const habilidadesNavbarClose = document.querySelector('.habilidades-navbar__btnClose');
+const btnCloseModalFrontend = document.querySelector('.habilidades-modal__btnClose-front');
+const btnCloseNavbarModal = document.querySelector('.navbar-modal__btnClose');
+const body = document.querySelector('body');
 
 
+
+
+// funcion al dar scroll header
+window.addEventListener('scroll', () => {
+    header.classList.toggle('scroll', window.scrollY > 0);
+    navegacion.classList.toggle('scroll', window.scrollY > 0);
+});
 
 //menu hamburguesa y sus funcionalidades
 btnMenu.addEventListener('click', ()=>{
-    navbarModal.classList.toggle('toggle');
-    header.style.background = '#fff';
-    logotipo.style.color = '#0078ff';
-    btnMenu.style.color = '#000';
-    
-    if(navbarModal.classList.contains('toggle')){
-        header.style.background = 'transparent';
-        logotipo.style.color = '#fff';
-        btnMenu.style.color = '#fff';
-    }
+    navbarModal.style.display = "flex";
+    body.style.overflow = "hidden";
+});
+btnCloseNavbarModal.addEventListener('click', ()=>{
+    navbarModal.style.display = "none";
+    body.style.overflow = "auto";
 });
 
 
-
-
-
-
-
-//abrir navbar de habilidades con frontend
+//despliegue de habilidades frontend
 habilidadesFrontendCard.addEventListener('click', ()=>{
-    habilidadesNavbar.style.display = 'block';
+    habilidadesModal.style.display = 'block';
+    // window.scrollTo(0, 0);
+    body.style.overflow = "hidden";
+    
 });
-habilidadesNavbarClose.addEventListener('click', ()=>{
-    habilidadesNavbar.style.display = 'none';
+btnCloseModalFrontend.addEventListener('click', ()=>{
+    habilidadesModal.style.display = 'none';
+    body.style.overflow = "auto";
+    
+  
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+

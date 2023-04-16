@@ -20,5 +20,22 @@
     &__btn-menu{
         font-size: 25px;
         cursor: pointer;
+        
     }
+
+    @media (min-width: 768px){
+        &__btn-menu{
+            display: none;
+        }
+    }
+    
+}
+
+
+
+.scroll{
+    
+    background-color: #fff;
+    transition: 0.8s;
+    color: v.$blue;
 }

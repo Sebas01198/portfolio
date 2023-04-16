@@ -19,28 +19,69 @@
   font-size: 25px;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .header__btn-menu {
+    display: none;
+  }
+}
+
+.scroll {
+  background-color: #fff;
+  transition: 0.8s;
+  color: #0078ff;
+}
 
 .navbar {
   display: none;
+  background-color: transparent;
+}
+.navbar__items {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar__link {
+  color: white;
+}
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: block;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 850px) {
+  .navbar {
+    width: 500px;
+  }
+}
+
+.scroll {
+  transition: 0.8s;
+  color: #0078ff;
+}
+
+.scroll a {
+  transition: 0.8s;
+  color: #0078ff;
+  font-weight: bold;
 }
 
 .navbar-modal {
-  position: absolute;
+  width: 70%;
+  position: fixed;
   color: #000;
   background-color: white;
-  top: 72px;
+  top: 0;
   right: 0;
-  left: 0;
-  height: 250px;
-  display: flex;
+  height: 100vh;
+  display: none;
   justify-content: center;
-  align-items: center;
 }
 .navbar-modal__items {
-  height: 150px;
+  height: 231px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 101px;
 }
 .navbar-modal__item {
   color: #0078ff;
@@ -50,9 +91,16 @@
   text-transform: uppercase;
   font-weight: 700;
 }
-
-.toggle {
-  display: none;
+.navbar-modal__btnClose {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  color: #0078ff;
 }
 
 .hero {
@@ -98,6 +146,15 @@
 .hero__button a {
   color: white;
 }
+@media (min-width: 768px) {
+  .hero__hello {
+    font-size: 40px;
+  }
+  .hero__name {
+    margin: 10px 0;
+    font-size: 80px;
+  }
+}
 
 .hero::before {
   position: absolute;
@@ -124,6 +181,7 @@
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
   padding: 80px 10px;
+  background-color: white;
 }
 .about__image {
   width: 150px;
@@ -157,6 +215,13 @@
 .habilidades {
   padding: 20px;
 }
+@media (min-width: 768px) {
+  .habilidades__display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+}
 .habilidades__frontend {
   padding: 80px 0px;
   margin-top: 50px;
@@ -165,17 +230,34 @@
   border-radius: 10px;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .habilidades__frontend {
+    width: 250px;
+  }
+}
 .habilidades__backend {
   padding: 80px 0px;
   margin-top: 50px;
   box-shadow: 0px 1px 23px rgba(0, 0, 0, 0.3);
   background-color: rgb(240, 240, 240);
   border-radius: 10px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .habilidades__backend {
+    width: 250px;
+  }
+}
+.habilidades__icon {
+  color: #0078ff;
+  font-size: 40px;
+  margin-bottom: 15px;
 }
 
-.habilidades-navbar {
+.habilidades-modal {
   display: none;
-  position: absolute;
+  position: fixed;
+  overflow-y: auto;
   background-color: #f5f5f5;
   top: 0;
   right: 0;
@@ -184,10 +266,9 @@
   left: 0;
   z-index: 1;
   padding: 25px;
-  overflow-y: scroll;
   transition: all 0.5;
 }
-.habilidades-navbar__btnClose {
+.habilidades-modal__btnClose-front {
   position: fixed;
   top: 15px;
   right: 20px;
@@ -198,27 +279,47 @@
   border-radius: 50%;
   color: #0078ff;
 }
-.habilidades-navbar__title {
+.habilidades-modal__title {
   margin-top: 80px;
   text-align: center;
   font-size: 40px;
 }
-.habilidades-navbar__name {
+.habilidades-modal__name {
   font-weight: 700;
 }
-.habilidades-navbar__skills {
+.habilidades-modal__skills {
   text-align: center;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.habilidades-navbar__skill {
+@media (min-width: 768px) {
+  .habilidades-modal__skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+.habilidades-modal__skill {
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.26);
 }
-.habilidades-navbar__skill i {
+@media screen and (min-width: 768px) {
+  .habilidades-modal__skill {
+    width: 250px;
+    gap: 20px;
+  }
+}
+.habilidades-modal__skill i {
   font-size: 120px;
   padding: 30px;
+}
+@media screen and (min-width: 768px) {
+  .habilidades-modal {
+    position: fixed;
+  }
 }
 
 .html {
@@ -253,6 +354,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {

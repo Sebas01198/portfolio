@@ -1,22 +1,25 @@
 @use 'variables' as v;
+@use 'mixins';
 
 .navbar-modal{
-    position: absolute;
+    width: 70%;
+
+    position: fixed;
     color: #000;
     background-color: white;
-    top: 72px;
+    top: 0;
     right: 0;
-    left: 0;
-    height: 250px;
-    display: flex; //cuando se presione es display flex
+    height: 100vh;
+    display: none; //cuando se presione es display flex
     justify-content: center;
-    align-items: center;
+  
 
     &__items{
-        height: 150px;
+        height: 231px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin-top: 101px;
         
     }
     &__item{
@@ -27,10 +30,8 @@
         text-transform: uppercase;
         font-weight: 700;
     }
+    &__btnClose{
+        @include mixins.btn-close;
+    }
 
-}
-
-.toggle{
-    display: none;
-    
 }

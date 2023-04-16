@@ -1,0 +1,12 @@
+@use 'variables' as v;
+@mixin btn-close{
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 50%;
+    color: v.$blue;
+}

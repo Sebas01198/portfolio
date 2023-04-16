@@ -43,6 +43,16 @@
         color: white;
         
     }
+
+    @media (min-width:768px){
+        &__hello{
+            font-size: 40px;
+        }
+        &__name{
+            margin: 10px 0;
+            font-size: 80px;
+        }
+    }
 }
 
 .hero::before{
@@ -54,3 +64,4 @@
     right: 0;
     background-color: rgba($color: #000000, $alpha: .6);
 }
+
