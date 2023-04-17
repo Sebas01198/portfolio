@@ -19,7 +19,7 @@
   font-size: 25px;
   cursor: pointer;
 }
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header__btn-menu {
     display: none;
   }
@@ -348,6 +348,50 @@
 
 .angular {
   color: #D2002E;
+}
+
+.portafolio {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+.portafolio__title i {
+  color: #0078ff;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cards__content {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.26);
+  overflow: hidden;
+}
+.cards__tech {
+  font-size: 16px;
+  margin: 10px 0px;
+}
+.cards__button {
+  background-color: #0078ff;
+  padding: 5px 20px;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.cards__button:hover {
+  opacity: 0.8;
+}
+@media screen and (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
 
 * {

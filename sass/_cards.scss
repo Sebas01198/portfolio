@@ -1,0 +1,43 @@
+@use 'variables' as v;
+.portafolio{
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    &__title i{
+        color: v.$blue;
+    }
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    &__content{
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.26);
+        overflow: hidden;
+    }
+    &__tech{
+        font-size: 16px;
+        margin: 10px 0px;
+    }
+    &__button{
+        background-color: v.$blue;
+        padding: 5px 20px;
+        color: white;
+        font-weight: 700;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
+    @media screen and (min-width:768px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+}
