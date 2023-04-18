@@ -7,8 +7,9 @@ const habilidadesFrontendCard = document.querySelector('.habilidades__frontend')
 const btnCloseModalFrontend = document.querySelector('.habilidades-modal__btnClose-front');
 const btnCloseNavbarModal = document.querySelector('.navbar-modal__btnClose');
 const body = document.querySelector('body');
-
-
+const habilidadesBackendCard = document.querySelector('.habilidades__backend');
+const habilidadesBackendModal = document.querySelector('.habilidades-backend');
+const btnCloseModalBackend = document.querySelector('.habilidades-backend__btnClose-back');
 
 
 // funcion al dar scroll header
@@ -40,7 +41,27 @@ btnCloseModalFrontend.addEventListener('click', ()=>{
     body.style.overflow = "auto";
     
   
-})
+});
+//despliegue habilidades backend
+habilidadesBackendCard.addEventListener('click', ()=>{
+    habilidadesBackendModal.style.display = 'block';
+    // window.scrollTo(0, 0);
+    body.style.overflow = "hidden";
+    
+});
+btnCloseModalBackend.addEventListener('click', ()=>{
+    habilidadesBackendModal.style.display = 'none';
+    body.style.overflow = "auto";
+    
+  
+});
+
+
+
+
+
+
+
 
 
 

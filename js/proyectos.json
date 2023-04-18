@@ -1,0 +1,23 @@
+{
+    "proyectos": [
+      {
+        "id": 1,
+        "imagen": "../img/sneaker.PNG",
+        "tecnologias": "HTML CSS JAVASCRIPT",
+        "link": ""
+      },
+      {
+        "id": 2,
+        "imagen": "../img/proyecto2.PNG",
+        "tecnologias": "HTML CSS JAVASCRIPT",
+        "link": ""
+      },
+      {
+        "id": 3,
+        "imagen": "../img/proyecto3.PNG",
+        "tecnologias": "HTML CSS JAVASCRIPT",
+        "link": ""
+      }
+    ]
+  }
+  

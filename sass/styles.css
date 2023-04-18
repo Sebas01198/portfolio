@@ -142,7 +142,7 @@
   cursor: pointer;
 }
 .hero__button:hover {
-  border: 3px solid #0e5d91;
+  border: 3px solid #0078ff;
 }
 .hero__button a {
   color: white;
@@ -220,16 +220,20 @@
   .habilidades__display {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
 }
 .habilidades__frontend {
   padding: 80px 0px;
+  transition: 0.5s;
   margin-top: 50px;
   box-shadow: 0px 1px 23px rgba(0, 0, 0, 0.3);
   background-color: rgb(240, 240, 240);
   border-radius: 10px;
   cursor: pointer;
+}
+.habilidades__frontend:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 768px) {
   .habilidades__frontend {
@@ -238,11 +242,15 @@
 }
 .habilidades__backend {
   padding: 80px 0px;
+  transition: 0.5s;
   margin-top: 50px;
   box-shadow: 0px 1px 23px rgba(0, 0, 0, 0.3);
   background-color: rgb(240, 240, 240);
   border-radius: 10px;
   cursor: pointer;
+}
+.habilidades__backend:hover {
+  transform: scale(1.1);
 }
 @media (min-width: 768px) {
   .habilidades__backend {
@@ -371,6 +379,10 @@
   border-radius: 10px;
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.26);
   overflow: hidden;
+  transition: 0.5s;
+}
+.cards__content:hover {
+  transform: scale(1.1);
 }
 .cards__tech {
   font-size: 16px;
@@ -387,12 +399,122 @@
 .cards__button:hover {
   opacity: 0.8;
 }
+.cards__button-more {
+  background-color: #0078ff;
+  cursor: pointer;
+  padding: 10px 40px;
+  margin: 25px auto;
+  color: white;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+.cards__button-more:hover {
+  opacity: 0.8;
+}
 @media screen and (min-width: 768px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+.habilidades-backend {
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+  background-color: #f5f5f5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  z-index: 1;
+  padding: 25px;
+  transition: all 0.5;
+}
+.habilidades-backend__btnClose-back {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 50%;
+  color: #0078ff;
+}
+.habilidades-backend__title {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 40px;
+}
+.habilidades-backend__name {
+  font-weight: 700;
+}
+.habilidades-backend__skills {
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  .habilidades-backend__skills {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+.habilidades-backend__skill {
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.26);
+}
+@media screen and (min-width: 768px) {
+  .habilidades-backend__skill {
+    width: 250px;
     gap: 20px;
   }
+}
+.habilidades-backend__skill i {
+  font-size: 120px;
+  padding: 30px;
+}
+@media screen and (min-width: 768px) {
+  .habilidades-backend {
+    position: fixed;
+  }
+}
+
+.html {
+  color: #E56027;
+}
+
+.css {
+  color: #008ED1;
+}
+
+.sass {
+  color: #C36291;
+}
+
+.bootstrap {
+  color: #8011F1;
+}
+
+.js {
+  color: #EAD41C;
+}
+
+.react {
+  color: #00CDF2;
+}
+
+.angular {
+  color: #D2002E;
 }
 
 * {
