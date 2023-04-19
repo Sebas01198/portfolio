@@ -1,3 +1,4 @@
+
 const btnMenu = document.querySelector('.header__btn-menu');
 const navbarModal = document.querySelector('.navbar-modal');
 const navegacion = document.querySelector('.navbar');
@@ -10,7 +11,6 @@ const body = document.querySelector('body');
 const habilidadesBackendCard = document.querySelector('.habilidades__backend');
 const habilidadesBackendModal = document.querySelector('.habilidades-backend');
 const btnCloseModalBackend = document.querySelector('.habilidades-backend__btnClose-back');
-
 
 // funcion al dar scroll header
 window.addEventListener('scroll', () => {
@@ -57,6 +57,20 @@ btnCloseModalBackend.addEventListener('click', ()=>{
 });
 
 
+import proyectos from "./proyectos.js";
+let cardsProyectos = proyectos.slice(0,6);
+cardsProyectos.forEach(product => {
+    const {id,imagen,tecnologias, link} = product;
+    let containerProyectos = document.querySelector('.cards');
+    
+    containerProyectos.innerHTML += `
+                <div class="cards__content" id = "${id}">
+                    <img class="cards__img" src="${imagen}" alt="">
+                    <h3 class="cards__tech">${tecnologias}</h3>
+                    <a class="cards__button" href="${link}" target="_blank">Ver</a>
+                </div>
+    `
+})
 
 
 

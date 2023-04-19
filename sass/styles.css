@@ -360,7 +360,7 @@
 }
 
 .portafolio {
-  height: 100vh;
+  height: auto;
   padding: 20px;
   text-align: center;
 }
@@ -515,6 +515,13 @@
 
 .angular {
   color: #D2002E;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #0078ff;
+  color: white;
 }
 
 * {
