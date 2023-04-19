@@ -13,9 +13,9 @@ const proyectos = [
   },
   {
     id: 3,
-    imagen: './img/sneaker.PNG',
-    tecnologias: 'HTML CSS JAVASCRIPT',
-    link: "https://sebas01198.github.io/Sneakers/"
+    imagen: './img/advice.PNG',
+    tecnologias: 'HTML CSS JAVASCRIPT API',
+    link: "https://sebas01198.github.io/Advice-generator-app/"
   },
   {
     id: 4,
